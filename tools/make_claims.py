@@ -484,10 +484,11 @@ def main():
       f"is very little shot-to-shot structure to find, which is what the design effect reports from "
       f"the other direction.")
     A("")
-    A("🔴 **The consequence runs the safe way.** Were the row order not the acquisition order, the "
-      "rows would be exchangeable, and a moving-block bootstrap on an exchangeable sequence returns "
-      "intervals no narrower than the independent-shot ones. The reported envelopes would then be "
-      "conservative rather than anti-conservative.")
+    A("🔴 **This does not verify the acquisition order.** An order that is not the acquisition "
+      "order is not thereby exchangeable, and an exchangeable sequence can still carry common-mode "
+      "correlation a finite block length does not reach. Adjacency of shots is an assumption the "
+      "block-bootstrap reading depends on; these are sensitivity diagnostics beside it, which is "
+      "one of the reasons every interval in this project is called nominal.")
     A("")
     A("### `E2q` — the mixture reference as a Monte Carlo quantile *(simulator, 0 QPU)*")
     A("Source: `data/e2_surrogate_quantile.json`. The registered reference was the mean of eight "

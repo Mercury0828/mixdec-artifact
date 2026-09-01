@@ -213,7 +213,7 @@ Source: `data/shot_order_stability.json`. Every device-side interval resamples c
 
 Largest count autocorrelation anywhere: **0.0183**. **2 of 28** lag-context cells fall outside the permutation null, against 1.4 expected by chance. There is very little shot-to-shot structure to find, which is what the design effect reports from the other direction.
 
-🔴 **The consequence runs the safe way.** Were the row order not the acquisition order, the rows would be exchangeable, and a moving-block bootstrap on an exchangeable sequence returns intervals no narrower than the independent-shot ones. The reported envelopes would then be conservative rather than anti-conservative.
+🔴 **This does not verify the acquisition order.** An order that is not the acquisition order is not thereby exchangeable, and an exchangeable sequence can still carry common-mode correlation a finite block length does not reach. Adjacency of shots is an assumption the block-bootstrap reading depends on; these are sensitivity diagnostics beside it, which is one of the reasons every interval in this project is called nominal.
 
 ### `E2q` — the mixture reference as a Monte Carlo quantile *(simulator, 0 QPU)*
 Source: `data/e2_surrogate_quantile.json`. The registered reference was the mean of eight draws plus 1.895 sample standard deviations, which is neither a t bound on the mean nor a one-draw prediction bound. Surrogate generation costs no QPU, so the empirical upper quantile of many draws replaces it.
