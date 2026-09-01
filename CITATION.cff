@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+title: >-
+  Artifact for "A Fitted Detector Error Model Fails Two Qualification Tests on
+  a Heron Processor"
+message: If you use this artifact, please cite the paper.
+type: software
+authors:
+  - given-names: Jiachen
+    family-names: Shen
+    email: jshen28@cougarnet.uh.edu
+    affiliation: University of Houston
+    orcid: https://orcid.org/0000-0002-7233-497X
+  - given-names: Hui
+    family-names: Zhong
+    email: zhongh7@miamioh.edu
+    affiliation: Miami University
+    orcid: https://orcid.org/0009-0005-7952-007X
+license: MIT
+repository-code: https://github.com/Mercury0828/mixdec-artifact
+abstract: >-
+  Cached hardware records, the submitted instruction-set circuit, the frozen
+  analysis and the generated claim list behind two qualification tests for a
+  fitted detector error model, measured on a 156-qubit IBM Heron r2 processor
+  running a distance-9 repetition memory. One driver regenerates every reported
+  number from the caches; no step spends processor time.
+keywords:
+  - quantum error correction
+  - detector error model
+  - windowed decoding
+  - model qualification
+  - repetition code
