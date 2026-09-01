@@ -5,6 +5,11 @@ Code, cached hardware records and frozen results for
 > J. Shen and H. Zhong, *A Fitted Detector Error Model Fails Two Qualification Tests on a Heron
 > Processor.*
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22217806.svg)](https://doi.org/10.5281/zenodo.22217806)
+
+Archived at [10.5281/zenodo.22217806](https://doi.org/10.5281/zenodo.22217806). That version is the
+one the numbers in the paper were produced from; cite it rather than the branch.
+
 Everything here regenerates from the cached shots. **No step in this repository spends processor
 time**, and the two endpoints the paper reports can be recomputed end to end offline.
 
