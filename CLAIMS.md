@@ -5,7 +5,7 @@
 > number typed into prose. Regenerate instead.
 >
 > **This file supersedes every number in every other document.** Where `PROJECT_STATE.md`,
-> the `EXP_REVIEW_round*.md` files or `docs/*.md` disagree, this file is right and they are
+> any other document disagrees, this file is right and the other is
 > historical — they are left as written so that what was claimed, and when, stays auditable.
 >
 > **Total QPU: 371 s** (6 + 8 + 119 + 119 + 119; da7mi6bsq5js73bk4veg, da7miljsq5js73bk4vtg, da9h4herbfbs73chl6tg, daaaee4jbipc73ffn220, daabe9urbfbs73cihfp0). Every simulator result is 0 QPU.

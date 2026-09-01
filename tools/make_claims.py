@@ -105,7 +105,7 @@ def main():
     A("> number typed into prose. Regenerate instead.")
     A(">")
     A("> **This file supersedes every number in every other document.** Where `PROJECT_STATE.md`,")
-    A("> the `EXP_REVIEW_round*.md` files or `docs/*.md` disagree, this file is right and they are")
+    A("> any other document disagrees, this file is right and the other is")
     A("> historical — they are left as written so that what was claimed, and when, stays auditable.")
     A(">")
     A(f"> **Total QPU: {sum(JOBS.values())} s** ("
