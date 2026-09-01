@@ -1,0 +1,21 @@
+{
+ "summary": {
+  "E1/R1": {
+   "records_with_2plus_neighbours": 0,
+   "squares": 0
+  },
+  "E1/R2": {
+   "records_with_2plus_neighbours": 382,
+   "squares": 0
+  },
+  "E2/R1": {
+   "records_with_2plus_neighbours": 0,
+   "squares": 0
+  },
+  "E2/R2": {
+   "records_with_2plus_neighbours": 338,
+   "squares": 0
+  }
+ },
+ "certificates": []
+}

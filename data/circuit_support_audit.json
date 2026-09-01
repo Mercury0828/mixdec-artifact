@@ -1,0 +1,59 @@
+{
+  "distance": 9,
+  "rounds": 50,
+  "shots": 200000,
+  "target_detector_rate": 0.0398,
+  "families": [
+    {
+      "family": "phenomenological",
+      "noise_scale": 0.0077544420764595265,
+      "mean_detector_rate": 0.039782463235294115,
+      "mechanisms": 1251,
+      "support_histogram": {
+        "1": 102,
+        "2": 1149
+      },
+      "max_support": 2,
+      "n_support_ge_3": 0,
+      "example_support_ge_3": [],
+      "G_same": -8.85669446394774,
+      "n_detectors_violating": 0,
+      "B": 33.82874708959634,
+      "T_same": 12.4860263128243
+    },
+    {
+      "family": "circuit-level",
+      "noise_scale": 0.004964677986130119,
+      "mean_detector_rate": 0.039716335784313724,
+      "mechanisms": 2042,
+      "support_histogram": {
+        "1": 200,
+        "2": 1842
+      },
+      "max_support": 2,
+      "n_support_ge_3": 0,
+      "example_support_ge_3": [],
+      "G_same": -13.607704563239665,
+      "n_detectors_violating": 0,
+      "B": 33.77335802059012,
+      "T_same": 10.08282672867523
+    },
+    {
+      "family": "submitted ISA",
+      "noise_scale": 0.0025708449734002364,
+      "mean_detector_rate": 0.039673872549019606,
+      "mechanisms": 1209,
+      "support_histogram": {
+        "1": 102,
+        "2": 1107
+      },
+      "max_support": 2,
+      "n_support_ge_3": 0,
+      "example_support_ge_3": [],
+      "G_same": -6.736750136058625,
+      "n_detectors_violating": 0,
+      "B": 33.74428672145256,
+      "T_same": 13.503768292696968
+    }
+  ]
+}

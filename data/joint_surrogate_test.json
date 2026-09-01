@@ -1,0 +1,144 @@
+{
+ "delta": 0.05,
+ "K": 8,
+ "alpha_primary_per_test": 0.003125,
+ "alpha_effect_per_side": 0.0015625,
+ "W1": 25,
+ "multiplicity": {
+  "budget": "delta = 0.05 split in half across the two families reported here",
+  "primary": {
+   "family": "Fisher exact, device vs surrogate, one per width",
+   "members": 8,
+   "sided": "two",
+   "level_per_member": "(delta/2)/K"
+  },
+  "effect": {
+   "family": "Clopper-Pearson endpoints paired into a difference lower bound",
+   "members": 16,
+   "sided": "one per endpoint",
+   "level_per_member": "(delta/2)/(2K)"
+  }
+ },
+ "significant_widths": [
+  1,
+  2,
+  3,
+  4,
+  6,
+  8
+ ],
+ "effect_positive_widths": [
+  1,
+  2,
+  3,
+  4,
+  6
+ ],
+ "weakest_adjusted_p": 0.0005107721337011897,
+ "rows": [
+  {
+   "b": 1,
+   "k_dev": 18,
+   "n_dev": 5000,
+   "k_ind": 0,
+   "n_ind": 20000,
+   "fisher_p": 2.5579584274570283e-13,
+   "p_bonferroni": 2.0463667419656226e-12,
+   "significant": true,
+   "cp_lower_device": 0.0015984253437344128,
+   "cp_upper_surrogate": 0.0003230212262236967,
+   "lower_bound_difference": 0.001275404117510716
+  },
+  {
+   "b": 2,
+   "k_dev": 16,
+   "n_dev": 5000,
+   "k_ind": 0,
+   "n_ind": 20000,
+   "fisher_p": 6.4288178411039084e-12,
+   "p_bonferroni": 5.143054272883127e-11,
+   "significant": true,
+   "cp_lower_device": 0.0013405210158686674,
+   "cp_upper_surrogate": 0.0003230212262236967,
+   "lower_bound_difference": 0.0010174997896449708
+  },
+  {
+   "b": 3,
+   "k_dev": 17,
+   "n_dev": 5000,
+   "k_ind": 0,
+   "n_ind": 20000,
+   "fisher_p": 1.282469905542022e-12,
+   "p_bonferroni": 1.0259759244336177e-11,
+   "significant": true,
+   "cp_lower_device": 0.001468440121647232,
+   "cp_upper_surrogate": 0.0003230212262236967,
+   "lower_bound_difference": 0.0011454188954235353
+  },
+  {
+   "b": 4,
+   "k_dev": 16,
+   "n_dev": 5000,
+   "k_ind": 0,
+   "n_ind": 20000,
+   "fisher_p": 6.4288178411039084e-12,
+   "p_bonferroni": 5.143054272883127e-11,
+   "significant": true,
+   "cp_lower_device": 0.0013405210158686674,
+   "cp_upper_surrogate": 0.0003230212262236967,
+   "lower_bound_difference": 0.0010174997896449708
+  },
+  {
+   "b": 6,
+   "k_dev": 11,
+   "n_dev": 5000,
+   "k_ind": 0,
+   "n_ind": 20000,
+   "fisher_p": 2.0300416440730857e-08,
+   "p_bonferroni": 1.6240333152584685e-07,
+   "significant": true,
+   "cp_lower_device": 0.0007398740099091907,
+   "cp_upper_surrogate": 0.0003230212262236967,
+   "lower_bound_difference": 0.000416852783685494
+  },
+  {
+   "b": 8,
+   "k_dev": 6,
+   "n_dev": 5000,
+   "k_ind": 0,
+   "n_ind": 20000,
+   "fisher_p": 6.384651671264871e-05,
+   "p_bonferroni": 0.0005107721337011897,
+   "significant": true,
+   "cp_lower_device": 0.000242055243258427,
+   "cp_upper_surrogate": 0.0003230212262236967,
+   "lower_bound_difference": -8.096598296526974e-05
+  },
+  {
+   "b": 12,
+   "k_dev": 3,
+   "n_dev": 5000,
+   "k_ind": 0,
+   "n_ind": 20000,
+   "fisher_p": 0.007996160153630725,
+   "p_bonferroni": 0.0639692812290458,
+   "significant": false,
+   "cp_lower_device": 4.4581936465444685e-05,
+   "cp_upper_surrogate": 0.0003230212262236967,
+   "lower_bound_difference": -0.000278439289758252
+  },
+  {
+   "b": 16,
+   "k_dev": 2,
+   "n_dev": 5000,
+   "k_ind": 0,
+   "n_ind": 20000,
+   "fisher_p": 0.03999359974398976,
+   "p_bonferroni": 0.3199487979519181,
+   "significant": false,
+   "cp_lower_device": 1.1395246269227908e-05,
+   "cp_upper_surrogate": 0.0003230212262236967,
+   "lower_bound_difference": -0.0003116259799544688
+  }
+ ]
+}

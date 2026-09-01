@@ -1,0 +1,135 @@
+{
+ "E1/R1": {
+  "G_same_device": 41.96622531763713,
+  "device_lcb_975": 40.25612142237077,
+  "device_block_spread": {
+   "250": {
+    "mean": 42.06390529163693,
+    "sd": 0.7227177986633158,
+    "lcb": 40.80783242093123
+   },
+   "1000": {
+    "mean": 41.91559723220561,
+    "sd": 0.8670115849928378,
+    "lcb": 40.30586020217981
+   },
+   "2500": {
+    "mean": 42.00533498456295,
+    "sd": 0.9751740854051779,
+    "lcb": 40.25612142237077
+   }
+  },
+  "surrogate_mean": 12.729339698217325,
+  "surrogate_sd": 0.2745872972093098,
+  "n_surrogate_draws": 32,
+  "surrogate_ucb_as_registered": 13.249682626428967,
+  "surrogate_ucb_even_split": 12.828338975937498,
+  "surrogate_prediction_bound": 13.298047251042872,
+  "margin_as_registered": 28.716542691208165,
+  "margin_even_split_95": 27.42778244643327,
+  "passes_even_split": true,
+  "device_count_var_over_mean": 3.9387436565326057,
+  "surrogate_count_var_over_mean": 4.402219371700018,
+  "dispersion_ratio": 1.117670951852557
+ },
+ "E1/R2": {
+  "G_same_device": 55.282284981509044,
+  "device_lcb_975": 53.72689855054008,
+  "device_block_spread": {
+   "250": {
+    "mean": 55.23620209596045,
+    "sd": 0.8022558102088528,
+    "lcb": 53.72689855054008
+   },
+   "1000": {
+    "mean": 55.39630861993319,
+    "sd": 0.9226439173129847,
+    "lcb": 53.8616704402751
+   },
+   "2500": {
+    "mean": 55.31973247212816,
+    "sd": 0.7309520544713585,
+    "lcb": 53.99772917585268
+   }
+  },
+  "surrogate_mean": 4.828444822413859,
+  "surrogate_sd": 0.21409391754292056,
+  "n_surrogate_draws": 32,
+  "surrogate_ucb_as_registered": 5.2341527961576935,
+  "surrogate_ucb_even_split": 4.905633910971276,
+  "surrogate_prediction_bound": 5.271862377261115,
+  "margin_as_registered": 50.04813218535135,
+  "margin_even_split_95": 48.8212646395688,
+  "passes_even_split": true,
+  "device_count_var_over_mean": 4.902238570545684,
+  "surrogate_count_var_over_mean": 3.75570544835028,
+  "dispersion_ratio": 0.7661204966473552
+ },
+ "_note": "device-side circular block bootstrap on G_same, an even 2.5/2.5 error split for the margin, and the surrogate's realised count dispersion against the device's; block grid [250, 1000, 2500], 200 replicates per length",
+ "E2/R1": {
+  "G_same_device": 36.85820683588088,
+  "device_lcb_975": 35.15653673167207,
+  "device_block_spread": {
+   "250": {
+    "mean": 36.937531481851494,
+    "sd": 0.819042199136886,
+    "lcb": 35.39285523670772
+   },
+   "1000": {
+    "mean": 36.708332052947824,
+    "sd": 0.7667153283094517,
+    "lcb": 35.15653673167207
+   },
+   "2500": {
+    "mean": 36.78447399609467,
+    "sd": 0.6803977573746053,
+    "lcb": 35.305397241208425
+   }
+  },
+  "surrogate_mean": 11.725517172176804,
+  "surrogate_sd": 0.27382200016967195,
+  "n_surrogate_draws": 32,
+  "surrogate_ucb_as_registered": 12.244409862498333,
+  "surrogate_ucb_even_split": 11.82424053089076,
+  "surrogate_prediction_bound": 12.292639690985773,
+  "margin_as_registered": 24.613796973382545,
+  "margin_even_split_95": 23.332296200781308,
+  "passes_even_split": true,
+  "device_count_var_over_mean": 3.831785498965631,
+  "surrogate_count_var_over_mean": 4.403971218001634,
+  "dispersion_ratio": 1.149326135085187
+ },
+ "E2/R2": {
+  "G_same_device": 54.479888105010694,
+  "device_lcb_975": 52.861780012653256,
+  "device_block_spread": {
+   "250": {
+    "mean": 54.49227190532646,
+    "sd": 0.8823066153888989,
+    "lcb": 52.91189057495316
+   },
+   "1000": {
+    "mean": 54.5256047663257,
+    "sd": 0.9062482230491072,
+    "lcb": 52.861780012653256
+   },
+   "2500": {
+    "mean": 54.49995624254209,
+    "sd": 0.6985754494896025,
+    "lcb": 53.19392882729433
+   }
+  },
+  "surrogate_mean": 4.076017616572871,
+  "surrogate_sd": 0.19783601851244934,
+  "n_surrogate_draws": 32,
+  "surrogate_ucb_as_registered": 4.450916871653963,
+  "surrogate_ucb_even_split": 4.147345107461271,
+  "surrogate_prediction_bound": 4.48576285640165,
+  "margin_as_registered": 50.02897123335673,
+  "margin_even_split_95": 48.714434905191986,
+  "passes_even_split": true,
+  "device_count_var_over_mean": 4.898762026536223,
+  "surrogate_count_var_over_mean": 3.834831973736582,
+  "dispersion_ratio": 0.7828165469078897
+ }
+}

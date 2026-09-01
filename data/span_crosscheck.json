@@ -1,0 +1,30 @@
+{
+ "context": "E2/R1/b1",
+ "n_rows": 24924,
+ "n_features": 10609,
+ "n_disagreements": 69,
+ "gelsy": {
+  "1e-12": {
+   "rank": 10608,
+   "residual_recomputed": 3.948111450524882,
+   "seconds": 241.0
+  },
+  "1e-10": {
+   "rank": 10608,
+   "residual_recomputed": 3.948111450524882,
+   "seconds": 237.4
+  },
+  "1e-08": {
+   "rank": 10608,
+   "residual_recomputed": 3.948111450524882,
+   "seconds": 237.5
+  }
+ },
+ "gelsd": {
+  "rank": 10608,
+  "residual_recomputed": 3.9481114505248818,
+  "singular_min_retained": 0.0005114943911756085,
+  "singular_max": 30.284050493624218,
+  "seconds": 221.3
+ }
+}

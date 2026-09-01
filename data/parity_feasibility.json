@@ -1,0 +1,32 @@
+{
+ "n_pairs": 83028,
+ "n_blocks": 10,
+ "bonferroni_z": 4.990508185525126,
+ "results": {
+  "device fit half": {
+   "n_negative": 41,
+   "n_positive": 7358,
+   "min_z": -8.612151776632311,
+   "max_z": 74.39290458867887,
+   "most_negative_excess": -0.0008799934314216607,
+   "most_negative_se": 0.00010218043692743332
+  },
+  "device eval half": {
+   "n_negative": 51,
+   "n_positive": 7513,
+   "min_z": -8.324347400074029,
+   "max_z": 97.94851328855404,
+   "most_negative_excess": -0.0023325562525159022,
+   "most_negative_se": 0.0002802089029219466
+  },
+  "C0 independent-event control": {
+   "n_negative": 79,
+   "n_positive": 607,
+   "min_z": -8.118435627871598,
+   "max_z": 93.6273951184254,
+   "most_negative_excess": -0.001420538233882325,
+   "most_negative_se": 0.00017497684270667132
+  }
+ },
+ "topology_free_violation": false
+}

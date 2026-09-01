@@ -1,0 +1,78 @@
+{
+  "gamma_shape": 5.701,
+  "draws": 200,
+  "rows": [
+    {
+      "epoch": "E1",
+      "region": "R1",
+      "draws": 200,
+      "G_same_device": 41.96622531763713,
+      "surrogate_mean": 12.748468918221183,
+      "surrogate_sd": 0.3832179145721815,
+      "surrogate_min": 11.836233505645929,
+      "surrogate_max": 14.149894209848846,
+      "surrogate_q95": 13.374131165747473,
+      "surrogate_q95_mc_se": 0.05320496348969204,
+      "surrogate_q95_mc_ci": [
+        13.262587647702347,
+        13.445177515817502
+      ],
+      "margin_over_q95": 28.59209415188966,
+      "seconds": 59.5
+    },
+    {
+      "epoch": "E1",
+      "region": "R2",
+      "draws": 200,
+      "G_same_device": 55.282284981509044,
+      "surrogate_mean": 4.825839010052768,
+      "surrogate_sd": 0.21203973304827206,
+      "surrogate_min": 4.257005934188754,
+      "surrogate_max": 5.380868057577903,
+      "surrogate_q95": 5.150162967947608,
+      "surrogate_q95_mc_se": 0.03738367607933853,
+      "surrogate_q95_mc_ci": [
+        5.104905559724308,
+        5.222581589987811
+      ],
+      "margin_over_q95": 50.132122013561435,
+      "seconds": 55.3
+    },
+    {
+      "epoch": "E2",
+      "region": "R1",
+      "draws": 200,
+      "G_same_device": 36.85820683588088,
+      "surrogate_mean": 11.739639711415004,
+      "surrogate_sd": 0.36010519359999127,
+      "surrogate_min": 10.804120957744217,
+      "surrogate_max": 12.927956942881686,
+      "surrogate_q95": 12.323081448601943,
+      "surrogate_q95_mc_se": 0.048797500495822356,
+      "surrogate_q95_mc_ci": [
+        12.181576050722635,
+        12.402869675623855
+      ],
+      "margin_over_q95": 24.535125387278935,
+      "seconds": 54.0
+    },
+    {
+      "epoch": "E2",
+      "region": "R2",
+      "draws": 200,
+      "G_same_device": 54.479888105010694,
+      "surrogate_mean": 4.07392120378156,
+      "surrogate_sd": 0.19289737950436073,
+      "surrogate_min": 3.5375601363601703,
+      "surrogate_max": 4.5981490250563795,
+      "surrogate_q95": 4.3699752742898195,
+      "surrogate_q95_mc_se": 0.024463552385058707,
+      "surrogate_q95_mc_ci": [
+        4.316168147117422,
+        4.423495269436426
+      ],
+      "margin_over_q95": 50.10991283072087,
+      "seconds": 62.5
+    }
+  ]
+}

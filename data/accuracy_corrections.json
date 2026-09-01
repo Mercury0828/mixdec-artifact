@@ -1,0 +1,44 @@
+{
+ "n_cells_joined": 60,
+ "n_eligible": 43,
+ "syndrome_selected": {
+  "cell": [
+   0.08,
+   8.0,
+   50.0
+  ],
+  "rank_syndrome": 1,
+  "rank_delta": 28
+ },
+ "delta_selected": {
+  "cell": [
+   0.05,
+   16.0,
+   50.0
+  ],
+  "rank_syndrome": 10,
+  "rank_delta": 1
+ },
+ "spearman_rho": 0.5567804288734521,
+ "spearman_p": 0.00010552387833922678,
+ "kendall_tau": 0.4086378737541528,
+ "kendall_p": 0.00011258226514428477,
+ "n_best_quartile_both": 5,
+ "overlap": {
+  "n_b1": 172,
+  "n_b16": 14,
+  "both": 7,
+  "jaccard": 0.03910614525139665,
+  "enrichment": 145.34883720930233,
+  "odds_ratio": 301.94545454545454,
+  "p_b16_given_b1": 0.040697674418604654,
+  "p_b16_given_not_b1": 0.0001404832624227342,
+  "overlap_over_min": 0.5
+ },
+ "variance_identity": {
+  "var_device": 70.74262,
+  "var_C1": 44.402904
+ },
+ "cp_bound_0_of_200k_bonf8": 2.5375547111572416e-05,
+ "claim_C_retracted": true
+}

@@ -1,0 +1,15 @@
+{
+ "target_per_seam_flag_rate": 0.09,
+ "p_matched": 0.03203125,
+ "achieved_per_seam_flag_rate": 0.09575,
+ "detector_rate": 0.14803383458646616,
+ "tuned_at_S": 4,
+ "tuning_shots": 1000,
+ "grid": {
+  "0.0077": 0.0045,
+  "0.015": 0.0145,
+  "0.025": 0.04825,
+  "0.04": 0.1535,
+  "0.06": 0.36175
+ }
+}

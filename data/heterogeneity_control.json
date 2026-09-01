@@ -1,0 +1,186 @@
+{
+ "gamma_shape": 5.70050048828125,
+ "target_sd": 8.359717145071357,
+ "achieved_sd": 8.324565195702416,
+ "n_device": 50000,
+ "n_surrogate": 200000,
+ "delta": 0.05,
+ "alpha_primary_per_test": 0.003125,
+ "alpha_effect_per_side": 0.0015625,
+ "multiplicity": {
+  "budget": "delta = 0.05 split in half across the two families reported here",
+  "primary": {
+   "family": "Fisher exact, device vs heterogeneous surrogate, one per width",
+   "members": 8,
+   "sided": "two",
+   "level_per_member": "(delta/2)/K"
+  },
+  "effect": {
+   "family": "Clopper-Pearson endpoints paired into a difference lower bound",
+   "members": 16,
+   "sided": "one per endpoint",
+   "level_per_member": "(delta/2)/(2K)"
+  }
+ },
+ "counts": {
+  "device": {
+   "mean": 16.24372,
+   "sd": 8.410954794885061,
+   "var_over_mean": 4.355169909454238,
+   "quantiles": {
+    "1": 2.0,
+    "5": 6.0,
+    "25": 10.0,
+    "50": 14.0,
+    "75": 20.0,
+    "95": 32.0,
+    "99": 42.0
+   }
+  },
+  "flat": {
+   "mean": 15.815085,
+   "sd": 5.3819050012774285,
+   "var_over_mean": 1.8314730172348106,
+   "quantiles": {
+    "1": 4.0,
+    "5": 8.0,
+    "25": 12.0,
+    "50": 16.0,
+    "75": 20.0,
+    "95": 25.0,
+    "99": 30.0
+   }
+  },
+  "heterogeneous": {
+   "mean": 15.69816,
+   "sd": 8.265486229762892,
+   "var_over_mean": 4.351991737528475,
+   "quantiles": {
+    "1": 2.0,
+    "5": 4.0,
+    "25": 10.0,
+    "50": 14.0,
+    "75": 20.0,
+    "95": 31.0,
+    "99": 40.0
+   }
+  }
+ },
+ "rows": [
+  {
+   "b": 1,
+   "k_device": 172,
+   "k_flat": 0,
+   "k_heterogeneous": 1,
+   "device_rate": 0.00344,
+   "flat_rate": 0.0,
+   "het_rate": 5e-06,
+   "het_over_device": 0.0014534883720930235,
+   "fisher_p": 6.559806383610194e-119,
+   "p_bonferroni": 5.247845106888155e-118,
+   "significant": true,
+   "lower_bound_difference": 0.0026734329459513714
+  },
+  {
+   "b": 2,
+   "k_device": 162,
+   "k_flat": 0,
+   "k_heterogeneous": 0,
+   "device_rate": 0.00324,
+   "flat_rate": 0.0,
+   "het_rate": 0.0,
+   "het_over_device": 0.0,
+   "fisher_p": 4.743772725080214e-114,
+   "p_bonferroni": 3.7950181800641714e-113,
+   "significant": true,
+   "lower_bound_difference": 0.0025075821483721483
+  },
+  {
+   "b": 3,
+   "k_device": 135,
+   "k_flat": 0,
+   "k_heterogeneous": 0,
+   "device_rate": 0.0027,
+   "flat_rate": 0.0,
+   "het_rate": 0.0,
+   "het_over_device": 0.0,
+   "fisher_p": 3.76817093400814e-95,
+   "p_bonferroni": 3.014536747206512e-94,
+   "significant": true,
+   "lower_bound_difference": 0.002032866278533418
+  },
+  {
+   "b": 4,
+   "k_device": 117,
+   "k_flat": 0,
+   "k_heterogeneous": 0,
+   "device_rate": 0.00234,
+   "flat_rate": 0.0,
+   "het_rate": 0.0,
+   "het_over_device": 0.0,
+   "fisher_p": 1.4904298315515244e-82,
+   "p_bonferroni": 1.1923438652412195e-81,
+   "significant": true,
+   "lower_bound_difference": 0.001720120294452108
+  },
+  {
+   "b": 6,
+   "k_device": 90,
+   "k_flat": 0,
+   "k_heterogeneous": 0,
+   "device_rate": 0.0018,
+   "flat_rate": 0.0,
+   "het_rate": 0.0,
+   "het_over_device": 0.0,
+   "fisher_p": 1.1610477333011478e-63,
+   "p_bonferroni": 9.288381866409183e-63,
+   "significant": true,
+   "lower_bound_difference": 0.001258479462409468
+  },
+  {
+   "b": 8,
+   "k_device": 58,
+   "k_flat": 0,
+   "k_heterogeneous": 0,
+   "device_rate": 0.00116,
+   "flat_rate": 0.0,
+   "het_rate": 0.0,
+   "het_over_device": 0.0,
+   "fisher_p": 2.807037672726004e-41,
+   "p_bonferroni": 2.245630138180803e-40,
+   "significant": true,
+   "lower_bound_difference": 0.000728774002882146
+  },
+  {
+   "b": 12,
+   "k_device": 29,
+   "k_flat": 0,
+   "k_heterogeneous": 0,
+   "device_rate": 0.00058,
+   "flat_rate": 0.0,
+   "het_rate": 0.0,
+   "het_over_device": 0.0,
+   "fisher_p": 5.333939112763385e-21,
+   "p_bonferroni": 4.267151290210708e-20,
+   "significant": true,
+   "lower_bound_difference": 0.00028021632757211967
+  },
+  {
+   "b": 16,
+   "k_device": 14,
+   "k_flat": 0,
+   "k_heterogeneous": 0,
+   "device_rate": 0.00028,
+   "flat_rate": 0.0,
+   "het_rate": 0.0,
+   "het_over_device": 0.0,
+   "fisher_p": 1.6360159681450345e-10,
+   "p_bonferroni": 1.3088127745160276e-09,
+   "significant": true,
+   "lower_bound_difference": 7.678664421653489e-05
+  }
+ ],
+ "falsifier_fired": false,
+ "max_het_over_device_b1to4": 0.0014534883720930235,
+ "share_of_b1_reproduced": 0.0014534883720930235
+}

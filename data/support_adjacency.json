@@ -1,0 +1,22 @@
+{
+ "E1/R1": {
+  "distinct": 24896,
+  "probes": 10200000,
+  "neighbours": 0
+ },
+ "E1/R2": {
+  "distinct": 23807,
+  "probes": 10200000,
+  "neighbours": 2315
+ },
+ "E2/R1": {
+  "distinct": 24924,
+  "probes": 10200000,
+  "neighbours": 2
+ },
+ "E2/R2": {
+  "distinct": 23929,
+  "probes": 10200000,
+  "neighbours": 1095
+ }
+}

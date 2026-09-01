@@ -1,0 +1,10 @@
+# Versions the reported results were produced with, on Python 3.11.4.
+numpy==2.2.6
+scipy==1.17.1
+matplotlib==3.10.8
+stim==1.16.0
+pymatching==2.4.0
+
+# Needed only by the fetch stages and by the ISA-circuit translation.
+qiskit==2.5.1
+qiskit-ibm-runtime==0.49.0

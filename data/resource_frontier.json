@@ -1,0 +1,138 @@
+{
+ "n_eval": 20000,
+ "b_small": 1,
+ "b_large": [
+  4,
+  8,
+  16
+ ],
+ "W1": 25,
+ "n_layers": 51,
+ "gap_tau": 3.8318127733701672,
+ "n_tau": 5000,
+ "seam_escalation_rate": 0.09095,
+ "delta": 0.05,
+ "alpha_per_cell": 0.004166666666666667,
+ "K": 12,
+ "explains_syndrome_rate": 1.0,
+ "growth_rungs_per_shot": 0.0,
+ "raw_decoder_calls": 243459,
+ "gap_cost_multiple": 1.9732771158677227,
+ "joint_dominates_all": true,
+ "joint_dominates_note": "dominates every EVALUATED policy row; ten window policies were compared",
+ "paired_trigger_test": {
+  "gap_only_wrong": 46,
+  "seam_only_wrong": 1,
+  "both_wrong": 0,
+  "mcnemar_p_two_sided": 6.821210263296962e-13
+ },
+ "non_dominated": [
+  {
+   "trigger": "-",
+   "policy": "JOINT (comparator)",
+   "cost": 51.0,
+   "cert_ub": 0.0
+  }
+ ],
+ "rows": [
+  {
+   "trigger": "-",
+   "policy": "JOINT (comparator)",
+   "fires": 0.0,
+   "disagree": 0,
+   "cert": 0.0,
+   "cert_ub": 0.0,
+   "cost": 51.0
+  },
+  {
+   "trigger": "seam residual (ours)",
+   "policy": "FIXED b=1",
+   "fires": 0.09095,
+   "disagree": 76,
+   "cert": 0.0038,
+   "cert_ub": 0.005103381710438855,
+   "cost": 54.4552
+  },
+  {
+   "trigger": "seam residual (ours)",
+   "policy": "ENLARGE 1->4",
+   "fires": 0.09095,
+   "disagree": 40,
+   "cert": 0.002,
+   "cert_ub": 0.002992237332791149,
+   "cost": 60.30925
+  },
+  {
+   "trigger": "seam residual (ours)",
+   "policy": "ENLARGE 1->8",
+   "fires": 0.09095,
+   "disagree": 20,
+   "cert": 0.001,
+   "cert_ub": 0.0017526815334953374,
+   "cost": 60.79365
+  },
+  {
+   "trigger": "seam residual (ours)",
+   "policy": "ENLARGE 1->16",
+   "fires": 0.09095,
+   "disagree": 4,
+   "cert": 0.0002,
+   "cert_ub": 0.0006423353813842396,
+   "cost": 62.07125
+  },
+  {
+   "trigger": "seam residual (ours)",
+   "policy": "ESCALATE -> joint",
+   "fires": 0.09095,
+   "disagree": 1,
+   "cert": 5e-05,
+   "cert_ub": 0.0003817693631998708,
+   "cost": 59.09365
+  },
+  {
+   "trigger": "whole-window gap (proxy)",
+   "policy": "FIXED b=1",
+   "fires": 0.10705,
+   "disagree": 76,
+   "cert": 0.0038,
+   "cert_ub": 0.005103381710438855,
+   "cost": 107.4552
+  },
+  {
+   "trigger": "whole-window gap (proxy)",
+   "policy": "ENLARGE 1->4",
+   "fires": 0.10705,
+   "disagree": 64,
+   "cert": 0.0032,
+   "cert_ub": 0.004410002692963138,
+   "cost": 113.99595
+  },
+  {
+   "trigger": "whole-window gap (proxy)",
+   "policy": "ENLARGE 1->8",
+   "fires": 0.10705,
+   "disagree": 57,
+   "cert": 0.00285,
+   "cert_ub": 0.004001452312498886,
+   "cost": 114.76355
+  },
+  {
+   "trigger": "whole-window gap (proxy)",
+   "policy": "ENLARGE 1->16",
+   "fires": 0.10705,
+   "disagree": 48,
+   "cert": 0.0024,
+   "cert_ub": 0.003470638885961566,
+   "cost": 116.37795
+  },
+  {
+   "trigger": "whole-window gap (proxy)",
+   "policy": "ESCALATE -> joint",
+   "fires": 0.10705,
+   "disagree": 46,
+   "cert": 0.0023,
+   "cert_ub": 0.003351684756990079,
+   "cost": 112.91475
+  }
+ ]
+}

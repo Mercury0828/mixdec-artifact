@@ -1,0 +1,80 @@
+{
+ "delta": 0.05,
+ "alpha_per_test": 0.00625,
+ "n_device_eval": 5000,
+ "n_independence": 20000,
+ "rows": [
+  {
+   "b": 1,
+   "ind_count": 0,
+   "ind_rate": 0.0,
+   "ind_cert": 0.0002537264967483508,
+   "device_rate": 0.0036,
+   "exceeds": true,
+   "ratio": 14.18850630949485
+  },
+  {
+   "b": 2,
+   "ind_count": 0,
+   "ind_rate": 0.0,
+   "ind_cert": 0.0002537264967483508,
+   "device_rate": 0.0032,
+   "exceeds": true,
+   "ratio": 12.612005608439867
+  },
+  {
+   "b": 3,
+   "ind_count": 0,
+   "ind_rate": 0.0,
+   "ind_cert": 0.0002537264967483508,
+   "device_rate": 0.0034,
+   "exceeds": true,
+   "ratio": 13.400255958967358
+  },
+  {
+   "b": 4,
+   "ind_count": 0,
+   "ind_rate": 0.0,
+   "ind_cert": 0.0002537264967483508,
+   "device_rate": 0.0032,
+   "exceeds": true,
+   "ratio": 12.612005608439867
+  },
+  {
+   "b": 6,
+   "ind_count": 0,
+   "ind_rate": 0.0,
+   "ind_cert": 0.0002537264967483508,
+   "device_rate": 0.0022,
+   "exceeds": true,
+   "ratio": 8.67075385580241
+  },
+  {
+   "b": 8,
+   "ind_count": 0,
+   "ind_rate": 0.0,
+   "ind_cert": 0.0002537264967483508,
+   "device_rate": 0.0012,
+   "exceeds": true,
+   "ratio": 4.72950210316495
+  },
+  {
+   "b": 12,
+   "ind_count": 0,
+   "ind_rate": 0.0,
+   "ind_cert": 0.0002537264967483508,
+   "device_rate": 0.0006,
+   "exceeds": true,
+   "ratio": 2.364751051582475
+  },
+  {
+   "b": 16,
+   "ind_count": 0,
+   "ind_rate": 0.0,
+   "ind_cert": 0.0002537264967483508,
+   "device_rate": 0.0004,
+   "exceeds": true,
+   "ratio": 1.5765007010549834
+  }
+ ]
+}

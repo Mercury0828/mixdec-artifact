@@ -1,0 +1,68 @@
+{
+ "n_cores": 32,
+ "n_layers": 51,
+ "b": 1,
+ "W1": 25,
+ "per_window_cost_us": {
+  "decode_only": 8.180475000699516,
+  "plus_commit_mask": 8.938375000070664,
+  "full_window_work": 21.332750000510714,
+  "fraction_projection_omitted": 0.6165297488367101
+ },
+ "latency": {
+  "shots": 4000,
+  "escalation_rate": 0.09475,
+  "parallel": {
+   "median": 26.200003048870713,
+   "mean": 36.18562498013489,
+   "p90": 66.60999788437037,
+   "p99": 137.90200231596822
+  },
+  "joint": {
+   "median": 11.499996617203578,
+   "mean": 15.951100040183519,
+   "p90": 30.700000934302807,
+   "p99": 54.8049953067674
+  },
+  "null_dispatch": {
+   "median": 2.1000014385208488,
+   "mean": 2.132174975486123,
+   "p90": 2.2000021999701858
+  },
+  "measured_ratio_median": 0.43893111751753244
+ },
+ "throughput": {
+  "shots": 20000,
+  "reps": 5,
+  "parallel_s": 0.5570622999948682,
+  "joint_s": 0.32617519999621436,
+  "parallel_shots_per_s": 35902.62704940586,
+  "joint_shots_per_s": 61316.740206588736,
+  "measured_speedup": 0.5855273279114727,
+  "ratio_lo": 0.5766644933132318,
+  "ratio_hi": 0.5896233039212596,
+  "escalated": 1819,
+  "escalation_rate": 0.09095,
+  "raw_parallel_s": [
+   0.5547256999998353,
+   0.5569976999977371,
+   0.5570622999948682,
+   0.5584680999963894,
+   0.5578169000000344
+  ],
+  "raw_joint_s": [
+   0.3270792000039364,
+   0.3275197999973898,
+   0.32518200000049546,
+   0.32617519999621436,
+   0.3216732000000775
+  ],
+  "n_outputs_differing": 1,
+  "cross_check_vs_resource_frontier": 1,
+  "cross_check_matches": true,
+  "counterbalanced": true,
+  "note": "END TO END. The declared output of BOTH paths is a per-shot logical parity. They agree on every shot except the certificate's own disagreements, whose count is stored above and cross-checked against resource_frontier. The windowed path also maintains a stitched correction boundary because its scheme requires one; on escalation the joint solution replaces both. `ratio_lo/hi` is the OBSERVED RANGE over the paired reps, not a confidence interval."
+ },
+ "falsifier_latency_fired": true,
+ "falsifier_throughput_fired": true
+}

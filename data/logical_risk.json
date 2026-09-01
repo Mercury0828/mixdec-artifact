@@ -1,0 +1,253 @@
+{
+  "W1": 25,
+  "rows": [
+    {
+      "epoch": "E1",
+      "region": "R1",
+      "b": 1,
+      "shots": 25000,
+      "disagreements": 89,
+      "pr_delta": 0.00356,
+      "harmful": 65,
+      "beneficial": 24,
+      "risk_joint": 0.00412,
+      "risk_split": 0.00576,
+      "risk_difference": 0.00164,
+      "risk_difference_ci": [
+        0.00088,
+        0.0024
+      ],
+      "envelope_spent": 0.4606741573033708,
+      "envelope_spent_ci": [
+        0.26666666666666666,
+        0.6455696202531646
+      ],
+      "blocks": [
+        100,
+        250,
+        500,
+        1000,
+        2500
+      ],
+      "n_boot": 4000,
+      "majority_floor": 0.0
+    },
+    {
+      "epoch": "E1",
+      "region": "R1",
+      "b": 2,
+      "shots": 25000,
+      "disagreements": 83,
+      "pr_delta": 0.00332,
+      "harmful": 63,
+      "beneficial": 20,
+      "risk_joint": 0.00412,
+      "risk_split": 0.00584,
+      "risk_difference": 0.0017199999999999993,
+      "risk_difference_ci": [
+        0.001,
+        0.00244
+      ],
+      "envelope_spent": 0.5180722891566263,
+      "envelope_spent_ci": [
+        0.3246753246753247,
+        0.6905219780219782
+      ],
+      "blocks": [
+        100,
+        250,
+        500,
+        1000,
+        2500
+      ],
+      "n_boot": 4000,
+      "majority_floor": 0.0
+    },
+    {
+      "epoch": "E1",
+      "region": "R2",
+      "b": 1,
+      "shots": 25000,
+      "disagreements": 37,
+      "pr_delta": 0.00148,
+      "harmful": 31,
+      "beneficial": 6,
+      "risk_joint": 0.00164,
+      "risk_split": 0.00264,
+      "risk_difference": 0.001,
+      "risk_difference_ci": [
+        0.00056,
+        0.0014810000000000036
+      ],
+      "envelope_spent": 0.6756756756756757,
+      "envelope_spent_ci": [
+        0.42371251629726203,
+        0.8918918918918919
+      ],
+      "blocks": [
+        100,
+        250,
+        500,
+        1000,
+        2500
+      ],
+      "n_boot": 4000,
+      "majority_floor": 0.0
+    },
+    {
+      "epoch": "E1",
+      "region": "R2",
+      "b": 2,
+      "shots": 25000,
+      "disagreements": 37,
+      "pr_delta": 0.00148,
+      "harmful": 33,
+      "beneficial": 4,
+      "risk_joint": 0.00164,
+      "risk_split": 0.0028,
+      "risk_difference": 0.00116,
+      "risk_difference_ci": [
+        0.00068,
+        0.00168
+      ],
+      "envelope_spent": 0.7837837837837838,
+      "envelope_spent_ci": [
+        0.5555555555555556,
+        0.9523809523809524
+      ],
+      "blocks": [
+        100,
+        250,
+        500,
+        1000,
+        2500
+      ],
+      "n_boot": 4000,
+      "majority_floor": 0.0
+    },
+    {
+      "epoch": "E2",
+      "region": "R1",
+      "b": 1,
+      "shots": 25000,
+      "disagreements": 69,
+      "pr_delta": 0.00276,
+      "harmful": 59,
+      "beneficial": 10,
+      "risk_joint": 0.00256,
+      "risk_split": 0.00452,
+      "risk_difference": 0.0019599999999999995,
+      "risk_difference_ci": [
+        0.00128,
+        0.00264
+      ],
+      "envelope_spent": 0.7101449275362317,
+      "envelope_spent_ci": [
+        0.5238095238095238,
+        0.8709884201819686
+      ],
+      "blocks": [
+        100,
+        250,
+        500,
+        1000,
+        2500
+      ],
+      "n_boot": 4000,
+      "majority_floor": 0.0
+    },
+    {
+      "epoch": "E2",
+      "region": "R1",
+      "b": 2,
+      "shots": 25000,
+      "disagreements": 73,
+      "pr_delta": 0.00292,
+      "harmful": 61,
+      "beneficial": 12,
+      "risk_joint": 0.00256,
+      "risk_split": 0.00452,
+      "risk_difference": 0.0019599999999999995,
+      "risk_difference_ci": [
+        0.00128,
+        0.00268
+      ],
+      "envelope_spent": 0.6712328767123287,
+      "envelope_spent_ci": [
+        0.4805194805194805,
+        0.8481108553893364
+      ],
+      "blocks": [
+        100,
+        250,
+        500,
+        1000,
+        2500
+      ],
+      "n_boot": 4000,
+      "majority_floor": 0.0
+    },
+    {
+      "epoch": "E2",
+      "region": "R2",
+      "b": 1,
+      "shots": 25000,
+      "disagreements": 48,
+      "pr_delta": 0.00192,
+      "harmful": 41,
+      "beneficial": 7,
+      "risk_joint": 0.0018,
+      "risk_split": 0.00316,
+      "risk_difference": 0.00136,
+      "risk_difference_ci": [
+        0.0008,
+        0.00196
+      ],
+      "envelope_spent": 0.7083333333333334,
+      "envelope_spent_ci": [
+        0.4418604651162791,
+        0.9245632424877709
+      ],
+      "blocks": [
+        100,
+        250,
+        500,
+        1000,
+        2500
+      ],
+      "n_boot": 4000,
+      "majority_floor": 0.0
+    },
+    {
+      "epoch": "E2",
+      "region": "R2",
+      "b": 2,
+      "shots": 25000,
+      "disagreements": 53,
+      "pr_delta": 0.00212,
+      "harmful": 46,
+      "beneficial": 7,
+      "risk_joint": 0.0018,
+      "risk_split": 0.00336,
+      "risk_difference": 0.0015600000000000002,
+      "risk_difference_ci": [
+        0.001,
+        0.00212
+      ],
+      "envelope_spent": 0.7358490566037738,
+      "envelope_spent_ci": [
+        0.49206349206349204,
+        0.9298245614035088
+      ],
+      "blocks": [
+        100,
+        250,
+        500,
+        1000,
+        2500
+      ],
+      "n_boot": 4000,
+      "majority_floor": 0.0
+    }
+  ]
+}

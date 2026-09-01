@@ -1,0 +1,40 @@
+{
+ "d": 408,
+ "n_pairs": 83028,
+ "n_null": 40,
+ "device_fit": {
+  "B": 34.24990135652466,
+  "T": 65.55576374392818,
+  "G2": 96.8616261313317,
+  "g": null,
+  "omega": null,
+  "K_lower_global": 4.8280848205385976,
+  "K_lower_local": 8.535155501433787,
+  "n_negative_c": 28663
+ },
+ "device_eval": {
+  "B": 34.347077370234395,
+  "T": 66.56093890522284,
+  "G2": 98.7748004402113,
+  "g": null,
+  "omega": null,
+  "K_lower_global": 4.875784724723355,
+  "K_lower_local": 8.34584671610168,
+  "n_negative_c": 28691
+ },
+ "device_eval_n_budget_violations": 408,
+ "device_eval_max_g": 0.5813587561731102,
+ "null": {
+  "G2_mean": -0.33290075659995083,
+  "G2_sd": 0.49737424164208954,
+  "G2_max": 0.586720927972209,
+  "max_g_max": 0.07121575063772159,
+  "n_viol_mean": 189.025,
+  "n_viol_max": 221
+ },
+ "z_G2_against_null": 199.26182922059954,
+ "null_draws_reaching_device": 0,
+ "falsifier22_violation": true,
+ "falsifier23_violation": true,
+ "status": "retrospective discovery on data examined many times; witness frozen for any replication"
+}

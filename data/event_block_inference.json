@@ -1,0 +1,156 @@
+{
+ "alpha": 0.0125,
+ "block": 2000,
+ "block_sweep": [
+  100,
+  250,
+  500,
+  1000,
+  2000,
+  5000
+ ],
+ "n_boot": 40000,
+ "n_perm": 40000,
+ "pub": 25000,
+ "gap_tau": 3.8318127733701672,
+ "falsifier_design_effect_fired": false,
+ "p12_block_permutation_p": 0.0018749531261718457,
+ "p12_permutation_by_block": {
+  "100": {
+   "p": 2.499937501562461e-05,
+   "blocks": 200,
+   "method": "monte-carlo"
+  },
+  "250": {
+   "p": 2.499937501562461e-05,
+   "blocks": 80,
+   "method": "monte-carlo"
+  },
+  "500": {
+   "p": 2.499937501562461e-05,
+   "blocks": 40,
+   "method": "monte-carlo"
+  },
+  "1000": {
+   "p": 3.814697265625e-06,
+   "blocks": 20,
+   "method": "exact"
+  },
+  "2000": {
+   "p": 0.001953125,
+   "blocks": 10,
+   "method": "exact"
+  },
+  "5000": {
+   "p": 0.125,
+   "blocks": 4,
+   "method": "exact"
+  }
+ },
+ "p12_permutation_most_conservative": 0.125,
+ "p12_permutation_origin_sensitivity": {
+  "0": 0.001953125,
+  "500": 0.00390625,
+  "1000": 0.0009765625,
+  "1500": 0.0009765625
+ },
+ "p12_permutation_blocks": 10,
+ "p12_permutation_p_floor": 0.001953125,
+ "p12_discordant": {
+  "gap_only": 46,
+  "seam_only": 1
+ },
+ "scope": "P9 rows: evaluation pubs 4 and 6, 50,000 shots, two clusters. P12 rows: the FIRST 20,000 evaluation shots, which lie inside pub 4 alone -- ONE partial cluster, not two. Gate-6 finding 3.",
+ "rows": [
+  {
+   "name": "P9 unflagged disagreement (b=1)",
+   "k": 3,
+   "n": 50000,
+   "rate": 6e-05,
+   "pub_counts": [
+    1,
+    2
+   ],
+   "cp_upper": 0.00019477145824729492,
+   "block_lo": 0.0,
+   "block_hi": 0.00016,
+   "design_effect": 1.1043131449608519,
+   "design_effect_by_block": {
+    "100": 0.9947074902346937,
+    "250": 0.9851333765697359,
+    "500": 0.9609893714569775,
+    "1000": 0.8916817412979096,
+    "2000": 1.1257748899959419,
+    "5000": 1.1657088314187742
+   },
+   "design_effect_max": 1.1657088314187742
+  },
+  {
+   "name": "all disagreement (b=1)",
+   "k": 172,
+   "n": 50000,
+   "rate": 0.00344,
+   "pub_counts": [
+    94,
+    78
+   ],
+   "cp_upper": 0.0040749492370431,
+   "block_lo": 0.00292,
+   "block_hi": 0.00396,
+   "design_effect": 0.7946156986015822,
+   "design_effect_by_block": {
+    "100": 0.9612709429556818,
+    "250": 0.9260680166559895,
+    "500": 0.8685001578438197,
+    "1000": 0.7719830957965151,
+    "2000": 0.7893645468913794,
+    "5000": 0.6849106323731036
+   },
+   "design_effect_max": 0.9612709429556818
+  },
+  {
+   "name": "P12 gap-only-wrong",
+   "k": 46,
+   "n": 20000,
+   "rate": 0.0023,
+   "pub_counts": [
+    46
+   ],
+   "cp_upper": 0.0031829573925674284,
+   "block_lo": 0.00155,
+   "block_hi": 0.00305,
+   "design_effect": 0.9951971759929547,
+   "design_effect_by_block": {
+    "100": 0.9943904227164774,
+    "250": 0.9339900015902389,
+    "500": 0.8247019941422857,
+    "1000": 0.8497492183684302,
+    "2000": 0.9986587433384748,
+    "5000": 1.2870660487417482
+   },
+   "design_effect_max": 1.2870660487417482
+  },
+  {
+   "name": "P12 seam-only-wrong",
+   "k": 1,
+   "n": 20000,
+   "rate": 5e-05,
+   "pub_counts": [
+    1
+   ],
+   "cp_upper": 0.0003190033692135919,
+   "block_lo": 0.0,
+   "block_hi": 0.0002,
+   "design_effect": 0.9216783240972095,
+   "design_effect_by_block": {
+    "100": 0.9499709169004336,
+    "250": 0.9640391371906679,
+    "500": 0.9545087782021009,
+    "1000": 0.9094897730632965,
+    "2000": 0.9026605368778065,
+    "5000": 0.7511613390121868
+   },
+   "design_effect_max": 0.9640391371906679
+  }
+ ]
+}

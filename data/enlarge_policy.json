@@ -1,0 +1,260 @@
+{
+ "n_eval": 20000,
+ "b_small": 1,
+ "b_large": [
+  4,
+  8,
+  16
+ ],
+ "W1": 25,
+ "gap_tau": 3.8318127733701672,
+ "n_fit_tau": 5000,
+ "seam_escalation_rate": 0.09095,
+ "delta": 0.05,
+ "alpha_per_cell": 0.0025,
+ "n_layers": 51,
+ "local_repair_span": [
+  17,
+  33
+ ],
+ "falsifier_escalate_dominated_fired": true,
+ "non_dominated": [
+  {
+   "repair": "local",
+   "trigger": "seam residual (ours)",
+   "policy": "FIXED b=1",
+   "cost": 54.4552,
+   "cert": 0.0038
+  },
+  {
+   "repair": "local",
+   "trigger": "seam residual (ours)",
+   "policy": "ESCALATE -> joint",
+   "cost": 59.09365,
+   "cert": 5e-05
+  }
+ ],
+ "scheme_comparison": "INCONCLUSIVE: F3 did not fire; paired McNemar p = 0.25",
+ "rows": [
+  {
+   "repair": "joint",
+   "trigger": "seam residual (ours)",
+   "policy": "FIXED b=1",
+   "fires": 0.09095,
+   "disagree": 76,
+   "cert": 0.0038,
+   "cert_ub": 0.005192829238585672,
+   "cost": 57.63845,
+   "joint_decodes_per_shot": 0.09095
+  },
+  {
+   "repair": "joint",
+   "trigger": "seam residual (ours)",
+   "policy": "ENLARGE b=1->4",
+   "fires": 0.09095,
+   "disagree": 40,
+   "cert": 0.002,
+   "cert_ub": 0.0030619406614955428,
+   "cost": 64.56,
+   "joint_decodes_per_shot": 0.1819
+  },
+  {
+   "repair": "joint",
+   "trigger": "seam residual (ours)",
+   "policy": "ENLARGE b=1->8",
+   "fires": 0.09095,
+   "disagree": 20,
+   "cert": 0.001,
+   "cert_ub": 0.0018072571532317702,
+   "cost": 64.5124,
+   "joint_decodes_per_shot": 0.1819
+  },
+  {
+   "repair": "joint",
+   "trigger": "seam residual (ours)",
+   "policy": "ENLARGE b=1->16",
+   "fires": 0.09095,
+   "disagree": 4,
+   "cert": 0.0002,
+   "cert_ub": 0.0006776423652041623,
+   "cost": 65.4015,
+   "joint_decodes_per_shot": 0.1819
+  },
+  {
+   "repair": "joint",
+   "trigger": "seam residual (ours)",
+   "policy": "ESCALATE -> joint",
+   "fires": 0.09095,
+   "disagree": 1,
+   "cert": 5e-05,
+   "cert_ub": 0.00041052438059714245,
+   "cost": 62.2769,
+   "joint_decodes_per_shot": 0.1819
+  },
+  {
+   "repair": "joint",
+   "trigger": "complementary gap (theirs)",
+   "policy": "FIXED b=1",
+   "fires": 0.10705,
+   "disagree": 76,
+   "cert": 0.0038,
+   "cert_ub": 0.005192829238585672,
+   "cost": 163.63845,
+   "joint_decodes_per_shot": 0.09095
+  },
+  {
+   "repair": "joint",
+   "trigger": "complementary gap (theirs)",
+   "policy": "ENLARGE b=1->4",
+   "fires": 0.10705,
+   "disagree": 64,
+   "cert": 0.0032,
+   "cert_ub": 0.0044935182291138305,
+   "cost": 170.67095,
+   "joint_decodes_per_shot": 0.13225
+  },
+  {
+   "repair": "joint",
+   "trigger": "complementary gap (theirs)",
+   "policy": "ENLARGE b=1->8",
+   "fires": 0.10705,
+   "disagree": 57,
+   "cert": 0.00285,
+   "cert_ub": 0.004081250735912572,
+   "cost": 171.2443,
+   "joint_decodes_per_shot": 0.13225
+  },
+  {
+   "repair": "joint",
+   "trigger": "complementary gap (theirs)",
+   "policy": "ENLARGE b=1->16",
+   "fires": 0.10705,
+   "disagree": 48,
+   "cert": 0.0024,
+   "cert_ub": 0.0035453106008331496,
+   "cost": 172.64345,
+   "joint_decodes_per_shot": 0.13225
+  },
+  {
+   "repair": "joint",
+   "trigger": "complementary gap (theirs)",
+   "policy": "ESCALATE -> joint",
+   "fires": 0.10705,
+   "disagree": 46,
+   "cert": 0.0023,
+   "cert_ub": 0.00342515479603516,
+   "cost": 169.098,
+   "joint_decodes_per_shot": 0.198
+  },
+  {
+   "repair": "local",
+   "trigger": "seam residual (ours)",
+   "policy": "FIXED b=1",
+   "fires": 0.09095,
+   "disagree": 76,
+   "cert": 0.0038,
+   "cert_ub": 0.005192829238585672,
+   "cost": 54.4552,
+   "joint_decodes_per_shot": 0.0
+  },
+  {
+   "repair": "local",
+   "trigger": "seam residual (ours)",
+   "policy": "ENLARGE b=1->4",
+   "fires": 0.09095,
+   "disagree": 40,
+   "cert": 0.002,
+   "cert_ub": 0.0030619406614955428,
+   "cost": 60.30925,
+   "joint_decodes_per_shot": 0.0
+  },
+  {
+   "repair": "local",
+   "trigger": "seam residual (ours)",
+   "policy": "ENLARGE b=1->8",
+   "fires": 0.09095,
+   "disagree": 20,
+   "cert": 0.001,
+   "cert_ub": 0.0018072571532317702,
+   "cost": 60.79365,
+   "joint_decodes_per_shot": 0.0
+  },
+  {
+   "repair": "local",
+   "trigger": "seam residual (ours)",
+   "policy": "ENLARGE b=1->16",
+   "fires": 0.09095,
+   "disagree": 4,
+   "cert": 0.0002,
+   "cert_ub": 0.0006776423652041623,
+   "cost": 62.07125,
+   "joint_decodes_per_shot": 0.0
+  },
+  {
+   "repair": "local",
+   "trigger": "seam residual (ours)",
+   "policy": "ESCALATE -> joint",
+   "fires": 0.09095,
+   "disagree": 1,
+   "cert": 5e-05,
+   "cert_ub": 0.00041052438059714245,
+   "cost": 59.09365,
+   "joint_decodes_per_shot": 0.09095
+  },
+  {
+   "repair": "local",
+   "trigger": "complementary gap (theirs)",
+   "policy": "FIXED b=1",
+   "fires": 0.10705,
+   "disagree": 76,
+   "cert": 0.0038,
+   "cert_ub": 0.005192829238585672,
+   "cost": 160.4552,
+   "joint_decodes_per_shot": 0.0
+  },
+  {
+   "repair": "local",
+   "trigger": "complementary gap (theirs)",
+   "policy": "ENLARGE b=1->4",
+   "fires": 0.10705,
+   "disagree": 64,
+   "cert": 0.0032,
+   "cert_ub": 0.0044935182291138305,
+   "cost": 166.99595,
+   "joint_decodes_per_shot": 0.0
+  },
+  {
+   "repair": "local",
+   "trigger": "complementary gap (theirs)",
+   "policy": "ENLARGE b=1->8",
+   "fires": 0.10705,
+   "disagree": 57,
+   "cert": 0.00285,
+   "cert_ub": 0.004081250735912572,
+   "cost": 167.76355,
+   "joint_decodes_per_shot": 0.0
+  },
+  {
+   "repair": "local",
+   "trigger": "complementary gap (theirs)",
+   "policy": "ENLARGE b=1->16",
+   "fires": 0.10705,
+   "disagree": 48,
+   "cert": 0.0024,
+   "cert_ub": 0.0035453106008331496,
+   "cost": 169.37795,
+   "joint_decodes_per_shot": 0.0
+  },
+  {
+   "repair": "local",
+   "trigger": "complementary gap (theirs)",
+   "policy": "ESCALATE -> joint",
+   "fires": 0.10705,
+   "disagree": 46,
+   "cert": 0.0023,
+   "cert_ub": 0.00342515479603516,
+   "cost": 165.91475,
+   "joint_decodes_per_shot": 0.10705
+  }
+ ]
+}

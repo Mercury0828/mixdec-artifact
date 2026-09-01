@@ -1,0 +1,131 @@
+{
+ "witness_sha256": "d1aed05de62d65b46e2ad18011ef5c7267be99e6d19475c650925f2cd2476ce2",
+ "n_context": 100000,
+ "n_cal": 50000,
+ "contexts": {
+  "NULL-INDEP": {
+   "tag": "NULL-INDEP",
+   "E1": {
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "6": 0.0,
+    "8": 0.0,
+    "12": 0.0,
+    "16": 0.0
+   },
+   "E2": {
+    "G_same": -4.864489493642019,
+    "n_detectors_violating": 4,
+    "n_detectors": 408,
+    "max_t_over_omega": 1.030285137324532,
+    "B": 33.4124029814767,
+    "T_same": 14.273956743917342
+   },
+   "counts": {
+    "mean": 15.81718,
+    "sd": 5.377091857835422,
+    "var_over_mean": 1.827956490828327
+   }
+  },
+  "NULL-HETERO": {
+   "tag": "NULL-HETERO",
+   "E1": {
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "6": 0.0,
+    "8": 0.0,
+    "12": 0.0,
+    "16": 0.0
+   },
+   "E2": {
+    "G_same": 11.891246788681997,
+    "n_detectors_violating": 250,
+    "n_detectors": 408,
+    "max_t_over_omega": 1.8462685693733643,
+    "B": 33.28999557574062,
+    "T_same": 22.590621182211308
+   },
+   "counts": {
+    "mean": 15.76162,
+    "sd": 8.345494291867917,
+    "var_over_mean": 4.4187891203822955
+   }
+  },
+  "ALT-PERSIST": {
+   "tag": "ALT-PERSIST",
+   "E1": {
+    "1": 0.00284,
+    "2": 0.00262,
+    "3": 0.0022,
+    "4": 0.00174,
+    "6": 0.00104,
+    "8": 0.00064,
+    "12": 0.00026,
+    "16": 4e-05
+   },
+   "E2": {
+    "G_same": 89.01089179729422,
+    "n_detectors_violating": 398,
+    "n_detectors": 408,
+    "max_t_over_omega": 6.552904363453231,
+    "B": 34.242743540661415,
+    "T_same": 61.62681766897782
+   },
+   "counts": {
+    "mean": 16.35348,
+    "sd": 8.372383883315432,
+    "var_over_mean": 4.286354457253135
+   }
+  },
+  "DEVICE-REPLAY": {
+   "tag": "DEVICE-REPLAY",
+   "E1": {
+    "1": 0.00344,
+    "2": 0.00324,
+    "3": 0.0027,
+    "4": 0.00234,
+    "6": 0.0018,
+    "8": 0.00116,
+    "12": 0.00058,
+    "16": 0.00028
+   },
+   "E2": {
+    "G_same": 48.52842892103008,
+    "n_detectors_violating": 408,
+    "n_detectors": 408,
+    "max_t_over_omega": 3.6447546375595907,
+    "B": 34.347077370234395,
+    "T_same": 41.437753145632236
+   },
+   "counts": {
+    "mean": 16.24372,
+    "sd": 8.410954794885061,
+    "var_over_mean": 4.355169909454238
+   }
+  }
+ },
+ "checks": {
+  "NULL-INDEP gives E1 ~ 0": true,
+  "NULL-INDEP gives E2 <= 0 (it is a theorem)": true,
+  "NULL-HETERO gives E1 ~ 0": true,
+  "NULL-HETERO gives E2 > 0 -- the confounder is real and must be offset": true,
+  "ALT-PERSIST gives E1 > 0": true,
+  "DEVICE-REPLAY reproduces both endpoints": true,
+  "the device exceeds the hetero confounder on E2 by >= 2x": true
+ },
+ "admissible": true,
+ "E2_hetero_offset": 11.891246788681997,
+ "cost": {
+  "n_pubs": 32,
+  "shots": 800000,
+  "rounds": 50,
+  "base_s": 411.192,
+  "corrected_s": 476.98272,
+  "with_headroom_s": 572.3792639999999,
+  "pct_of_28day_budget": 7.949711999999998
+ }
+}

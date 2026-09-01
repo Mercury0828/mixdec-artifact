@@ -1,0 +1,43 @@
+{
+ "E1/R1": {
+  "sigma_max": 30.351447285223625,
+  "sigma_min_retained": 0.0014911792787622455,
+  "kappa_retained": 20353.98943473575,
+  "rank": 10609,
+  "n_discarded": 0,
+  "largest_discarded": 0.0,
+  "cutoff": 3.0351447285223627e-09,
+  "rcond": 1e-10
+ },
+ "E1/R2": {
+  "sigma_max": 27.3641096261762,
+  "sigma_min_retained": 0.0010342633781066546,
+  "kappa_retained": 26457.583440950548,
+  "rank": 10609,
+  "n_discarded": 0,
+  "largest_discarded": 0.0,
+  "cutoff": 2.7364109626176203e-09,
+  "rcond": 1e-10
+ },
+ "_note": "singular values of the column-scaled design matrix per context, by SVD; the smallest retained value is the last above rcond times the largest",
+ "E2/R1": {
+  "sigma_max": 30.28405049362421,
+  "sigma_min_retained": 0.0005114943911756089,
+  "kappa_retained": 59207.00405730732,
+  "rank": 10608,
+  "n_discarded": 1,
+  "largest_discarded": 3.98459096525526e-15,
+  "cutoff": 3.028405049362421e-09,
+  "rcond": 1e-10
+ },
+ "E2/R2": {
+  "sigma_max": 27.631996611787386,
+  "sigma_min_retained": 0.004152627554409278,
+  "kappa_retained": 6654.099422532515,
+  "rank": 10609,
+  "n_discarded": 0,
+  "largest_discarded": 0.0,
+  "cutoff": 2.763199661178739e-09,
+  "rcond": 1e-10
+ }
+}

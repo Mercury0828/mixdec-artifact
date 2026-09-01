@@ -1,0 +1,452 @@
+{
+ "eps0.0_seed0_b1": {
+  "eps": 0.0,
+  "seed": 0,
+  "b": 1,
+  "k_divergence": 136,
+  "k_seam": 108,
+  "k_repair": 28,
+  "U_repair": 0.0044439920249984945
+ },
+ "eps0.0_seed0_b2": {
+  "eps": 0.0,
+  "seed": 0,
+  "b": 2,
+  "k_divergence": 87,
+  "k_seam": 73,
+  "k_repair": 14,
+  "U_repair": 0.0026612066093807253
+ },
+ "eps0.0_seed0_b4": {
+  "eps": 0.0,
+  "seed": 0,
+  "b": 4,
+  "k_divergence": 46,
+  "k_seam": 36,
+  "k_repair": 10,
+  "U_repair": 0.0021198874801194967
+ },
+ "eps0.0_seed0_b8": {
+  "eps": 0.0,
+  "seed": 0,
+  "b": 8,
+  "k_divergence": 23,
+  "k_seam": 18,
+  "k_repair": 5,
+  "U_repair": 0.001398741389789987
+ },
+ "eps0.0_seed0_b12": {
+  "eps": 0.0,
+  "seed": 0,
+  "b": 12,
+  "k_divergence": 7,
+  "k_seam": 6,
+  "k_repair": 1,
+  "U_repair": 0.0007308167235300284
+ },
+ "eps1e-06_seed1_b1": {
+  "eps": 1e-06,
+  "seed": 1,
+  "b": 1,
+  "k_divergence": 141,
+  "k_seam": 116,
+  "k_repair": 25,
+  "U_repair": 0.004071684183687033
+ },
+ "eps1e-06_seed1_b2": {
+  "eps": 1e-06,
+  "seed": 1,
+  "b": 2,
+  "k_divergence": 93,
+  "k_seam": 78,
+  "k_repair": 15,
+  "U_repair": 0.0027934269421815146
+ },
+ "eps1e-06_seed1_b4": {
+  "eps": 1e-06,
+  "seed": 1,
+  "b": 4,
+  "k_divergence": 56,
+  "k_seam": 47,
+  "k_repair": 9,
+  "U_repair": 0.0019806184374062167
+ },
+ "eps1e-06_seed1_b8": {
+  "eps": 1e-06,
+  "seed": 1,
+  "b": 8,
+  "k_divergence": 24,
+  "k_seam": 21,
+  "k_repair": 3,
+  "U_repair": 0.0010833091179708678
+ },
+ "eps1e-06_seed1_b12": {
+  "eps": 1e-06,
+  "seed": 1,
+  "b": 12,
+  "k_divergence": 10,
+  "k_seam": 9,
+  "k_repair": 1,
+  "U_repair": 0.0007308167235300284
+ },
+ "eps1e-06_seed2_b1": {
+  "eps": 1e-06,
+  "seed": 2,
+  "b": 1,
+  "k_divergence": 114,
+  "k_seam": 96,
+  "k_repair": 18,
+  "U_repair": 0.003184395346412077
+ },
+ "eps1e-06_seed2_b2": {
+  "eps": 1e-06,
+  "seed": 2,
+  "b": 2,
+  "k_divergence": 84,
+  "k_seam": 71,
+  "k_repair": 13,
+  "U_repair": 0.0025278776096592866
+ },
+ "eps1e-06_seed2_b4": {
+  "eps": 1e-06,
+  "seed": 2,
+  "b": 4,
+  "k_divergence": 53,
+  "k_seam": 41,
+  "k_repair": 12,
+  "U_repair": 0.0023933177265700357
+ },
+ "eps1e-06_seed2_b8": {
+  "eps": 1e-06,
+  "seed": 2,
+  "b": 8,
+  "k_divergence": 22,
+  "k_seam": 16,
+  "k_repair": 6,
+  "U_repair": 0.001548927550929029
+ },
+ "eps1e-06_seed2_b12": {
+  "eps": 1e-06,
+  "seed": 2,
+  "b": 12,
+  "k_divergence": 8,
+  "k_seam": 6,
+  "k_repair": 2,
+  "U_repair": 0.0009139797760982495
+ },
+ "eps1e-06_seed3_b1": {
+  "eps": 1e-06,
+  "seed": 3,
+  "b": 1,
+  "k_divergence": 147,
+  "k_seam": 122,
+  "k_repair": 25,
+  "U_repair": 0.004071684183687033
+ },
+ "eps1e-06_seed3_b2": {
+  "eps": 1e-06,
+  "seed": 3,
+  "b": 2,
+  "k_divergence": 81,
+  "k_seam": 68,
+  "k_repair": 13,
+  "U_repair": 0.0025278776096592866
+ },
+ "eps1e-06_seed3_b4": {
+  "eps": 1e-06,
+  "seed": 3,
+  "b": 4,
+  "k_divergence": 40,
+  "k_seam": 33,
+  "k_repair": 7,
+  "U_repair": 0.0016955578407453114
+ },
+ "eps1e-06_seed3_b8": {
+  "eps": 1e-06,
+  "seed": 3,
+  "b": 8,
+  "k_divergence": 24,
+  "k_seam": 20,
+  "k_repair": 4,
+  "U_repair": 0.001244035477651523
+ },
+ "eps1e-06_seed3_b12": {
+  "eps": 1e-06,
+  "seed": 3,
+  "b": 12,
+  "k_divergence": 7,
+  "k_seam": 5,
+  "k_repair": 2,
+  "U_repair": 0.0009139797760982495
+ },
+ "eps0.001_seed1_b1": {
+  "eps": 0.001,
+  "seed": 1,
+  "b": 1,
+  "k_divergence": 141,
+  "k_seam": 115,
+  "k_repair": 26,
+  "U_repair": 0.004196235472716555
+ },
+ "eps0.001_seed1_b2": {
+  "eps": 0.001,
+  "seed": 1,
+  "b": 2,
+  "k_divergence": 93,
+  "k_seam": 78,
+  "k_repair": 15,
+  "U_repair": 0.0027934269421815146
+ },
+ "eps0.001_seed1_b4": {
+  "eps": 0.001,
+  "seed": 1,
+  "b": 4,
+  "k_divergence": 52,
+  "k_seam": 43,
+  "k_repair": 9,
+  "U_repair": 0.0019806184374062167
+ },
+ "eps0.001_seed1_b8": {
+  "eps": 0.001,
+  "seed": 1,
+  "b": 8,
+  "k_divergence": 21,
+  "k_seam": 18,
+  "k_repair": 3,
+  "U_repair": 0.0010833091179708678
+ },
+ "eps0.001_seed1_b12": {
+  "eps": 0.001,
+  "seed": 1,
+  "b": 12,
+  "k_divergence": 7,
+  "k_seam": 6,
+  "k_repair": 1,
+  "U_repair": 0.0007308167235300284
+ },
+ "eps0.001_seed2_b1": {
+  "eps": 0.001,
+  "seed": 2,
+  "b": 1,
+  "k_divergence": 117,
+  "k_seam": 98,
+  "k_repair": 19,
+  "U_repair": 0.003313075890423027
+ },
+ "eps0.001_seed2_b2": {
+  "eps": 0.001,
+  "seed": 2,
+  "b": 2,
+  "k_divergence": 81,
+  "k_seam": 68,
+  "k_repair": 13,
+  "U_repair": 0.0025278776096592866
+ },
+ "eps0.001_seed2_b4": {
+  "eps": 0.001,
+  "seed": 2,
+  "b": 4,
+  "k_divergence": 53,
+  "k_seam": 41,
+  "k_repair": 12,
+  "U_repair": 0.0023933177265700357
+ },
+ "eps0.001_seed2_b8": {
+  "eps": 0.001,
+  "seed": 2,
+  "b": 8,
+  "k_divergence": 22,
+  "k_seam": 16,
+  "k_repair": 6,
+  "U_repair": 0.001548927550929029
+ },
+ "eps0.001_seed2_b12": {
+  "eps": 0.001,
+  "seed": 2,
+  "b": 12,
+  "k_divergence": 8,
+  "k_seam": 6,
+  "k_repair": 2,
+  "U_repair": 0.0009139797760982495
+ },
+ "eps0.001_seed3_b1": {
+  "eps": 0.001,
+  "seed": 3,
+  "b": 1,
+  "k_divergence": 147,
+  "k_seam": 122,
+  "k_repair": 25,
+  "U_repair": 0.004071684183687033
+ },
+ "eps0.001_seed3_b2": {
+  "eps": 0.001,
+  "seed": 3,
+  "b": 2,
+  "k_divergence": 80,
+  "k_seam": 67,
+  "k_repair": 13,
+  "U_repair": 0.0025278776096592866
+ },
+ "eps0.001_seed3_b4": {
+  "eps": 0.001,
+  "seed": 3,
+  "b": 4,
+  "k_divergence": 39,
+  "k_seam": 32,
+  "k_repair": 7,
+  "U_repair": 0.0016955578407453114
+ },
+ "eps0.001_seed3_b8": {
+  "eps": 0.001,
+  "seed": 3,
+  "b": 8,
+  "k_divergence": 24,
+  "k_seam": 20,
+  "k_repair": 4,
+  "U_repair": 0.001244035477651523
+ },
+ "eps0.001_seed3_b12": {
+  "eps": 0.001,
+  "seed": 3,
+  "b": 12,
+  "k_divergence": 7,
+  "k_seam": 5,
+  "k_repair": 2,
+  "U_repair": 0.0009139797760982495
+ },
+ "eps0.01_seed1_b1": {
+  "eps": 0.01,
+  "seed": 1,
+  "b": 1,
+  "k_divergence": 141,
+  "k_seam": 115,
+  "k_repair": 26,
+  "U_repair": 0.004196235472716555
+ },
+ "eps0.01_seed1_b2": {
+  "eps": 0.01,
+  "seed": 1,
+  "b": 2,
+  "k_divergence": 93,
+  "k_seam": 78,
+  "k_repair": 15,
+  "U_repair": 0.0027934269421815146
+ },
+ "eps0.01_seed1_b4": {
+  "eps": 0.01,
+  "seed": 1,
+  "b": 4,
+  "k_divergence": 52,
+  "k_seam": 43,
+  "k_repair": 9,
+  "U_repair": 0.0019806184374062167
+ },
+ "eps0.01_seed1_b8": {
+  "eps": 0.01,
+  "seed": 1,
+  "b": 8,
+  "k_divergence": 21,
+  "k_seam": 18,
+  "k_repair": 3,
+  "U_repair": 0.0010833091179708678
+ },
+ "eps0.01_seed1_b12": {
+  "eps": 0.01,
+  "seed": 1,
+  "b": 12,
+  "k_divergence": 7,
+  "k_seam": 6,
+  "k_repair": 1,
+  "U_repair": 0.0007308167235300284
+ },
+ "eps0.01_seed2_b1": {
+  "eps": 0.01,
+  "seed": 2,
+  "b": 1,
+  "k_divergence": 117,
+  "k_seam": 98,
+  "k_repair": 19,
+  "U_repair": 0.003313075890423027
+ },
+ "eps0.01_seed2_b2": {
+  "eps": 0.01,
+  "seed": 2,
+  "b": 2,
+  "k_divergence": 81,
+  "k_seam": 68,
+  "k_repair": 13,
+  "U_repair": 0.0025278776096592866
+ },
+ "eps0.01_seed2_b4": {
+  "eps": 0.01,
+  "seed": 2,
+  "b": 4,
+  "k_divergence": 53,
+  "k_seam": 41,
+  "k_repair": 12,
+  "U_repair": 0.0023933177265700357
+ },
+ "eps0.01_seed2_b8": {
+  "eps": 0.01,
+  "seed": 2,
+  "b": 8,
+  "k_divergence": 22,
+  "k_seam": 16,
+  "k_repair": 6,
+  "U_repair": 0.001548927550929029
+ },
+ "eps0.01_seed2_b12": {
+  "eps": 0.01,
+  "seed": 2,
+  "b": 12,
+  "k_divergence": 8,
+  "k_seam": 6,
+  "k_repair": 2,
+  "U_repair": 0.0009139797760982495
+ },
+ "eps0.01_seed3_b1": {
+  "eps": 0.01,
+  "seed": 3,
+  "b": 1,
+  "k_divergence": 147,
+  "k_seam": 122,
+  "k_repair": 25,
+  "U_repair": 0.004071684183687033
+ },
+ "eps0.01_seed3_b2": {
+  "eps": 0.01,
+  "seed": 3,
+  "b": 2,
+  "k_divergence": 80,
+  "k_seam": 67,
+  "k_repair": 13,
+  "U_repair": 0.0025278776096592866
+ },
+ "eps0.01_seed3_b4": {
+  "eps": 0.01,
+  "seed": 3,
+  "b": 4,
+  "k_divergence": 39,
+  "k_seam": 32,
+  "k_repair": 7,
+  "U_repair": 0.0016955578407453114
+ },
+ "eps0.01_seed3_b8": {
+  "eps": 0.01,
+  "seed": 3,
+  "b": 8,
+  "k_divergence": 24,
+  "k_seam": 20,
+  "k_repair": 4,
+  "U_repair": 0.001244035477651523
+ },
+ "eps0.01_seed3_b12": {
+  "eps": 0.01,
+  "seed": 3,
+  "b": 12,
+  "k_divergence": 7,
+  "k_seam": 5,
+  "k_repair": 2,
+  "U_repair": 0.0009139797760982495
+ }
+}
