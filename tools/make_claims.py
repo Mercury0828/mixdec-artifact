@@ -37,6 +37,7 @@ def main():
     eb = L("event_block_inference")
     cv1, cv2 = L("campaign_v_e1_results"), L("campaign_v_e2_results")
     lr, csa = L("logical_risk"), L("circuit_support_audit")
+    so = L("shot_order_stability")
     bd, eq = L("baseline_diagnostics"), L("e2_surrogate_quantile")
     gl = L("graphlike_infeasibility")
 
@@ -104,7 +105,7 @@ def main():
     A("> number typed into prose. Regenerate instead.")
     A(">")
     A("> **This file supersedes every number in every other document.** Where `PROJECT_STATE.md`,")
-    A("> any other document disagrees, this file is right and the other is")
+    A("> the `EXP_REVIEW_round*.md` files or `docs/*.md` disagree, this file is right and they are")
     A("> historical — they are left as written so that what was claimed, and when, stays auditable.")
     A(">")
     A(f"> **Total QPU: {sum(JOBS.values())} s** ("
@@ -455,6 +456,39 @@ def main():
       "detects. What they add is what the residual means: a decoder decision with a measured "
       "magnitude, and an exclusion of the whole graphlike class rather than of one fit.")
     A("")
+    A("### `S1` — does the row order of a process unit carry time structure *(device, 0 QPU)*")
+    A("Source: `data/shot_order_stability.json`. Every device-side interval resamples contiguous "
+      "rows, which is dependence-robust only if adjacent rows are adjacent shots. The primitive "
+      "returns row `i` of every register for shot `i`, and no per-shot timestamp exists to confirm "
+      "that the shot index tracks wall-clock acquisition, so it is tested indirectly.")
+    A("")
+    A("| epoch | region | max abs count ACF over lags | lags outside a %d-draw permutation null | "
+      "quarter rate spread | quarter var/mean spread |" % so["n_permutations"])
+    A("|---|---|---|---|---|---|")
+    worst = 0.0
+    n_out = 0
+    for r in so["rows"]:
+        m = max(abs(v) for v in r["count_acf"].values())
+        worst = max(worst, m)
+        n_out += len(r["lags_outside_null"])
+        q = r["quarters"]
+        rs = (max(x["rate"] for x in q) - min(x["rate"] for x in q)) / min(x["rate"] for x in q)
+        fs = (max(x["fano"] for x in q) - min(x["fano"] for x in q)) / min(x["fano"] for x in q)
+        A(f"| {r['epoch'][-1]} | {r['region']} | {m:.4f} | "
+          f"{r['lags_outside_null'] if r['lags_outside_null'] else 'none'} | "
+          f"{rs*100:.1f}% | {fs*100:.1f}% |")
+    cells = len(so["rows"]) * len(so["lags"])
+    A("")
+    A(f"Largest count autocorrelation anywhere: **{worst:.4f}**. **{n_out} of {cells}** lag-context "
+      f"cells fall outside the permutation null, against {0.05*cells:.1f} expected by chance. There "
+      f"is very little shot-to-shot structure to find, which is what the design effect reports from "
+      f"the other direction.")
+    A("")
+    A("🔴 **The consequence runs the safe way.** Were the row order not the acquisition order, the "
+      "rows would be exchangeable, and a moving-block bootstrap on an exchangeable sequence returns "
+      "intervals no narrower than the independent-shot ones. The reported envelopes would then be "
+      "conservative rather than anti-conservative.")
+    A("")
     A("### `E2q` — the mixture reference as a Monte Carlo quantile *(simulator, 0 QPU)*")
     A("Source: `data/e2_surrogate_quantile.json`. The registered reference was the mean of eight "
       "draws plus 1.895 sample standard deviations, which is neither a t bound on the mean nor a "
@@ -552,7 +586,8 @@ def check():
                                   "event_block_inference", "campaign_v_e1_results",
                                   "campaign_v_e2_results", "graphlike_infeasibility",
                                   "logical_risk", "circuit_support_audit",
-                                  "baseline_diagnostics", "e2_surrogate_quantile")}
+                                  "baseline_diagnostics", "e2_surrogate_quantile",
+                                  "shot_order_stability")}
     out = os.path.join(ROOT, "CLAIMS.md")
 
     # 🔴 RELATIONAL, one mutation at a time. The sixth gate showed a substring battery passes when

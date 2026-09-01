@@ -5,7 +5,7 @@
 > number typed into prose. Regenerate instead.
 >
 > **This file supersedes every number in every other document.** Where `PROJECT_STATE.md`,
-> any other document disagrees, this file is right and the other is
+> the `EXP_REVIEW_round*.md` files or `docs/*.md` disagree, this file is right and they are
 > historical — they are left as written so that what was claimed, and when, stays auditable.
 >
 > **Total QPU: 371 s** (6 + 8 + 119 + 119 + 119; da7mi6bsq5js73bk4veg, da7miljsq5js73bk4vtg, da9h4herbfbs73chl6tg, daaaee4jbipc73ffn220, daabe9urbfbs73cihfp0). Every simulator result is 0 QPU.
@@ -200,6 +200,20 @@ Source: `data/baseline_diagnostics.json`. Device against its own fitted model, s
 | 2 | R2 | 0.0300 / 0.0288 | 12.25 / 11.73 | 4.90 / 1.89 | +0.143 / +0.003 | 49.8% | 19.20 / 0.00 | +54.48 / -2.52 |
 
 🔴 **The fitted model already fails ordinary diagnostics.** The count dispersion is short by a factor near two and the lag-2 same-stabiliser correlation by a factor between seven and fifty, and a third to a half of same-stabiliser pair rates differ by more than three standard errors. `E1` and `E2` are therefore **not** claimed to detect where nothing else detects. What they add is what the residual means: a decoder decision with a measured magnitude, and an exclusion of the whole graphlike class rather than of one fit.
+
+### `S1` — does the row order of a process unit carry time structure *(device, 0 QPU)*
+Source: `data/shot_order_stability.json`. Every device-side interval resamples contiguous rows, which is dependence-robust only if adjacent rows are adjacent shots. The primitive returns row `i` of every register for shot `i`, and no per-shot timestamp exists to confirm that the shot index tracks wall-clock acquisition, so it is tested indirectly.
+
+| epoch | region | max abs count ACF over lags | lags outside a 200-draw permutation null | quarter rate spread | quarter var/mean spread |
+|---|---|---|---|---|---|
+| 1 | R1 | 0.0183 | [2] | 6.0% | 9.6% |
+| 1 | R2 | 0.0095 | none | 0.4% | 7.9% |
+| 2 | R1 | 0.0172 | [50] | 5.6% | 7.7% |
+| 2 | R2 | 0.0072 | none | 4.1% | 6.1% |
+
+Largest count autocorrelation anywhere: **0.0183**. **2 of 28** lag-context cells fall outside the permutation null, against 1.4 expected by chance. There is very little shot-to-shot structure to find, which is what the design effect reports from the other direction.
+
+🔴 **The consequence runs the safe way.** Were the row order not the acquisition order, the rows would be exchangeable, and a moving-block bootstrap on an exchangeable sequence returns intervals no narrower than the independent-shot ones. The reported envelopes would then be conservative rather than anti-conservative.
 
 ### `E2q` — the mixture reference as a Monte Carlo quantile *(simulator, 0 QPU)*
 Source: `data/e2_surrogate_quantile.json`. The registered reference was the mean of eight draws plus 1.895 sample standard deviations, which is neither a t bound on the mean nor a one-draw prediction bound. Surrogate generation costs no QPU, so the empirical upper quantile of many draws replaces it.
